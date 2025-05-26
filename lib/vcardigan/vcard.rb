@@ -74,7 +74,7 @@ module VCardigan
       end
 
       raise VCardigan::MissingVersionError if strict && self.version.nil?
-      raise VCardigan::MissingFullNameError if strict && !@fields.has_key?('fn')
+      # raise VCardigan::MissingFullNameError if strict && !@fields.has_key?('fn')
 
       self
     end
